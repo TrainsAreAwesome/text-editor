@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/TrainsAreAwesome/text-editor/issues"
   },
-  "homepage": "https://github.com/TrainsAreAwesome/text-editor#readme"
+  "homepage": "https://github.com/TrainsAreAwesome/text-editor#readme",
+  "dependencies": {
+    "electron": "^13.1.9",
+    "monaco-editor": "^0.26.1"
+  }
 }
