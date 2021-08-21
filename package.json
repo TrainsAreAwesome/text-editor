@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ../node_modules/webpack/bin/webpack.js --progress"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/TrainsAreAwesome/text-editor#readme",
   "dependencies": {
+    "css-loader": "^6.2.0",
     "electron": "^13.1.9",
-    "monaco-editor": "^0.26.1"
+    "file-loader": "^6.2.0",
+    "monaco-editor": "^0.27.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1"
   }
 }
