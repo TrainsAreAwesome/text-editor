@@ -1,5 +1,7 @@
 import * as monaco from 'monaco-editor';
 
+import "./style.css"
+
 self.MonacoEnvironment = {
 	getWorkerUrl: function (moduleId, label) {
 		if (label === 'json') {
@@ -13,12 +15,15 @@ self.MonacoEnvironment = {
 		}
 		if (label === 'typescript' || label === 'javascript') {
 			return './ts.worker.bundle.js';
-		}
+		}									
 		return './editor.worker.bundle.js';
 	}
 };
 
-monaco.editor.create(document.getElementById('container'), {
-	value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
-	language: 'javascript'
-});
+window.onload = ()=>{	
+	monaco.editor.create(document.getElementById('container'), {
+		value: ['function x() {', '\tconsole.log("Hello world!");', '}'].join('\n'),
+		language: 'javascript',
+		automaticLayout: true
+	});
+}
