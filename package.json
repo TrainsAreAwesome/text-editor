@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --progress",
+    "buildwatch": "webpack --progress --watch",
+    "run": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,18 @@
   "bugs": {
     "url": "https://github.com/TrainsAreAwesome/text-editor/issues"
   },
-  "homepage": "https://github.com/TrainsAreAwesome/text-editor#readme"
+  "homepage": "https://github.com/TrainsAreAwesome/text-editor#readme",
+  "dependencies": {
+    "css-loader": "^6.2.0",
+    "electron": "^13.1.9",
+    "express": "^4.17.1",
+    "file-exists": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "monaco-editor": "^0.27.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.8.0"
+  }
 }
