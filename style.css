@@ -3,6 +3,25 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+@keyframes welcome-text {
+
+    from {position: relative; left: -50em;}
+    to {position: relative; left: 50em}
+    
+}
+
+#weclome-text
+{
+    position: relative;
+    left: -50em;
+    animation-name: welcome-text;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+
+
 #container
 {
     position: absolute;
